@@ -1,13 +1,13 @@
 import Head from 'next/head';
 import { HiOutlineViewGridAdd } from 'react-icons/hi';
-import Table from '@/components/table';
-import Form from '@/components/form';
+import Table from '@/components/Table';
+import Form from '@/components/Form';
 import { Inter } from '@next/font/google';
 import styles from '@/styles/Home.module.css';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
-const Manage = dynamic(() => import('../container/manage'));
-const Navigation = dynamic(() => import('../components/navigation'));
+const Manage = dynamic(() => import('../container/Manage'));
+const Navigation = dynamic(() => import('../components/Navigation'));
 import Wallet from '@/components/Wallet';
 
 export default function Home() {

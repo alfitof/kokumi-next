@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { HiOutlineViewGridAdd } from 'react-icons/hi';
-import Table from '@/components/table';
-import Form from '@/components/form';
+import Table from '@/components/Table';
+import Form from '@/components/Form';
 
 export default function Manage() {
   return (
