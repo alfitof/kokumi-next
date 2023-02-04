@@ -183,10 +183,10 @@ section {
   .thumbs li img {
     max-width: 50px;
   }
+  .sci li {
+    visibility: hidden;
+  }
   .circle {
     clip-path: circle(400px at center bottom);
-  }
-  .toggle {
-    background-size: 25px;
   }
 }
