@@ -8,14 +8,11 @@ import Link from 'next/link';
 import dynamic from 'next/dynamic';
 const Manage = dynamic(() => import('../container/Manage'));
 const Navigation = dynamic(() => import('../components/Navigation'));
-import Wallet from '@/components/Wallet';
 
 export default function Home() {
   return (
     <div>
       <Navigation />
-
-      <Wallet />
       {/* <Manage /> */}
     </div>
   );
