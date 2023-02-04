@@ -41,7 +41,7 @@ export default function Navigation() {
         <a href="#" className="mr-4 cursor-pointer py-1.5">
           <Image src="/image/logo.png" alt="" width={80} height={80} style={{ position: 'relative' }} />
         </a>
-        <div className="hidden lg:block" style={{ marginLeft: '6%' }}>
+        <div className="hidden lg:block" style={{ marginLeft: '5%' }}>
           {navList}
         </div>
         <div className="hidden lg:block">
@@ -62,13 +62,15 @@ export default function Navigation() {
       <MobileNav open={openNav}>
         <div className="container mx-auto">
           {navList}
-          <div className="w-full mb-4 pl-3">
-            <ConnectButton
-              accountStatus={{
-                smallScreen: 'avatar',
-                largeScreen: 'full',
-              }}
-            />
+          <div className="w-full mb-4">
+            <div style={{ width: '30%', margin: 'auto' }}>
+              <ConnectButton
+                accountStatus={{
+                  smallScreen: 'avatar',
+                  largeScreen: 'full',
+                }}
+              />
+            </div>
           </div>
         </div>
       </MobileNav>

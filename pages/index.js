@@ -5,12 +5,13 @@ import styles from '@/styles/Home.module.css';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import Navigation from '../components/navigation';
+import Homepage from '../container/homepage';
 
 export default function Home() {
   return (
     <div>
       <Navigation />
-      Navigation
+      <Homepage />
       {/* <Manage /> */}
     </div>
   );
