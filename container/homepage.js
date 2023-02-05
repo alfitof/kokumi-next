@@ -34,9 +34,9 @@ export default function Homepage() {
       <div className="content">
         <div className="textBox">
           <h2>
-            Its not just Bobba Its
-            <br />
             <span style={{ color: color }}> KOKUMI コクミ</span>
+            <br />
+            Your Daily Dose of Flavorful Joy
           </h2>
           <a href="#" style={{ background: color }}>
             Order Now
