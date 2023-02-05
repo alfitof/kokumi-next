@@ -39,9 +39,9 @@ export default function Navigation() {
   return (
     <nav class="block w-full bg-white text-white py-2 px-10 lg:px-20 lg:py-4">
       <div className="mx-auto flex items-center justify-between text-gray-900">
-        <a href="/" className="mr-4 cursor-pointer py-1.5">
+        <Link href="/" className="mr-4 cursor-pointer py-1.5">
           <Image src="/image/logo.png" alt="" width={80} height={80} style={{ position: 'relative' }} />
-        </a>
+        </Link>
         <div className="hidden lg:block" style={{ marginLeft: '5%' }}>
           {navList}
         </div>
