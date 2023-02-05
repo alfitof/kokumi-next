@@ -17,26 +17,38 @@ export default function Homepage() {
   useEffect(() => {
     document.body.style.src = image;
   }, [image]);
+
+  const [color2, setColor2] = useState('#ccddef');
+  const clickThumb = (color2) => {
+    setColor2(color2);
+  };
+  useEffect(() => {
+    document.body.style.backgroundColor = color2;
+  }, [color2]);
+
   return (
     <section>
-      <div class="circle" style={{ background: color }}></div>
+      <div className="circle11" style={{ background: color2 }}></div>
+      <div className="circle" style={{ background: color }}></div>
 
-      <div class="content">
-        <div class="textBox">
+      <div className="content">
+        <div className="textBox">
           <h2>
-            Its not just Bobba
+            <span style={{ color: color }}> KOKUMI コクミ</span>
             <br />
-            Its <span style={{ color: color }}> KOKUMI コクミ</span>
+            A Drink That Satisfies Your
+            <br />
+            Taste Buds and Soul
           </h2>
           <a href="#" style={{ background: color }}>
             Order Now
           </a>
         </div>
-        <div class="imgBox">
-          <Image src={image} width={'350'} height={'350'} class="kokumi" />
+        <div className="imgBox">
+          <Image src={image} width={'350'} height={'350'} className="kokumi" />
         </div>
       </div>
-      <ul class="thumb">
+      <ul className="thumb">
         <li>
           <Image
             src="/image/rainbow mini.png"
@@ -45,6 +57,7 @@ export default function Homepage() {
             onClick={() => {
               click('#2e2d67');
               clickImage('/image/rainbow miring.png');
+              setColor2('#ccddef');
             }}
           />
         </li>
@@ -56,6 +69,7 @@ export default function Homepage() {
             onClick={() => {
               click('#ffe108');
               clickImage('/image/cheese miring.png');
+              setColor2('rgb(255 241 191)');
             }}
           />
         </li>
@@ -67,6 +81,7 @@ export default function Homepage() {
             onClick={() => {
               click('#a0dcea');
               clickImage('/image/88rising miring.png');
+              setColor2('rgb(237 251 255)');
             }}
           />
         </li>
@@ -78,11 +93,12 @@ export default function Homepage() {
             onClick={() => {
               click('#ff7774');
               clickImage('/image/boba miring.png');
+              setColor2('#ffedea');
             }}
           />
         </li>
       </ul>
-      <ul class="sci">
+      <ul className="sci">
         <li>
           <a href="https://www.facebook.com/kokumi.indonesia/">
             <Image src="/image/facebook.png" width={21} height={41} />
