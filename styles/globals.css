@@ -116,11 +116,6 @@ section {
   max-width: 60px;
 }
 
-.connected {
-  width: 30%;
-  margin: auto;
-}
-
 .sci {
   position: absolute;
   top: 50%;
@@ -192,22 +187,5 @@ section {
   }
   .circle {
     clip-path: circle(400px at center bottom);
-  }
-}
-
-@media (max-width: 767px) {
-  .connected {
-    width: 21%;
-  }
-}
-
-@media (max-width: 535px) {
-  .connected {
-    width: 31%;
-  }
-}
-@media (max-width: 429px) {
-  .connected {
-    width: 41%;
   }
 }

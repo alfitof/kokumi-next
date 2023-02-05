@@ -29,6 +29,9 @@ const myThemeCus = merge(darkTheme(), {
     modalBackground: '#2e2d67',
     connectButtonBackground: '#2e2d67',
   },
+  shadows: {
+    connectButton: 'none',
+  },
 });
 
 export default function App({ Component, pageProps }) {

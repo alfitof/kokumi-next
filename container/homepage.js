@@ -94,8 +94,8 @@ export default function Homepage() {
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/KOKUMI_ID">
-            <Image src="/image/twitter.png" width={41} height={33} />
+          <a href="https://www.youtube.com/channel/UCHqs795i06t2urLkAWidzvg">
+            <Image src="/image/youtube.png" width={50} height={39} />
           </a>
         </li>
       </ul>
