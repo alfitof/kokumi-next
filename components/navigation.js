@@ -64,13 +64,7 @@ export default function Navigation() {
           {navList}
           <div className="w-full mb-4">
             <div className="connected">
-              <ConnectButton
-                label="Connect"
-                accountStatus={{
-                  smallScreen: 'avatar',
-                  largeScreen: 'full',
-                }}
-              />
+              <ConnectButton label="Connect a Wallet" />
             </div>
           </div>
         </div>
