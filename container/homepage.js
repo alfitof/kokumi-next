@@ -57,7 +57,7 @@ export default function Homepage() {
             onClick={() => {
               click('#2e2d67');
               clickImage('/image/rainbow miring.png');
-              setColor2('#ccddef');
+              clickThumb('#ccddef');
             }}
           />
         </li>
@@ -69,7 +69,7 @@ export default function Homepage() {
             onClick={() => {
               click('#ffe108');
               clickImage('/image/cheese miring.png');
-              setColor2('rgb(255 241 191)');
+              clickThumb('rgb(255 241 191)');
             }}
           />
         </li>
@@ -81,7 +81,7 @@ export default function Homepage() {
             onClick={() => {
               click('#a0dcea');
               clickImage('/image/88rising miring.png');
-              setColor2('rgb(237 251 255)');
+              clickThumb('rgb(237 251 255)`');
             }}
           />
         </li>
@@ -93,7 +93,7 @@ export default function Homepage() {
             onClick={() => {
               click('#ff7774');
               clickImage('/image/boba miring.png');
-              setColor2('#ffedea');
+              clickThumb('#ffedea');
             }}
           />
         </li>

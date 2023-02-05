@@ -7,6 +7,7 @@ import { mainnet, polygon, optimism, arbitrum } from 'wagmi/chains';
 import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
 import merge from 'lodash.merge';
+import { useState, useEffect } from 'react';
 
 const { chains, provider } = configureChains([mainnet, polygon, optimism, arbitrum], [alchemyProvider({ apiKey: process.env.ALCHEMY_ID }), publicProvider()]);
 
@@ -28,6 +29,10 @@ const myThemeCus = merge(darkTheme(), {
     accentColor: '#2e2d67',
     modalBackground: '#2e2d67',
     connectButtonBackground: '#2e2d67',
+    connectButtonInnerBackground: '#2e2d67',
+    menuItemBackground: '#fbb94f',
+    profileAction: '#fbb94f',
+    profileActionHover: '#ffc568',
   },
   shadows: {
     connectButton: 'none',
