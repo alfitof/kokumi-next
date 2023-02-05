@@ -23,7 +23,7 @@ export default function Menu() {
 
               <div class="relative block h-full">
                 <div class="h-96 bg-gray-100 rounded-lg" style={{ paddingTop: '10%' }}>
-                  <Image src="/image/boba miring.png" width={200} height={350} style={{ margin: 'auto' }} />
+                  <Image src="/image/boba miring.png" width={200} height={350} style={{ margin: 'auto' }} alt="product" />
                 </div>
               </div>
             </div>
