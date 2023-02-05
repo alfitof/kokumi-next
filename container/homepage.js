@@ -54,7 +54,7 @@ export default function Homepage() {
             width={60}
             height={60}
             onClick={() => {
-              click('#baaaf6');
+              click('#ffe108');
               clickImage('/image/cheese miring.png');
             }}
           />
