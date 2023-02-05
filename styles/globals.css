@@ -22,10 +22,6 @@ a {
   max-width: 80px;
 }
 
-section {
-  height: 100vh;
-}
-
 #wave {
   padding: 100px;
   background-size: 100%;
@@ -33,7 +29,7 @@ section {
   background-image: url('/image/wave.svg');
   background-position: bottom;
 }
-.section {
+section {
   position: relative;
   width: 100%;
   min-height: 84.5vh;

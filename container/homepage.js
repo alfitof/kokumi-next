@@ -27,7 +27,7 @@ export default function Homepage() {
   }, [color2]);
 
   return (
-    <div className="section">
+    <section>
       <div className="circle11" style={{ background: color2 }}></div>
       <div className="circle" style={{ background: color }}></div>
 
@@ -113,6 +113,6 @@ export default function Homepage() {
           </a>
         </li>
       </ul>
-    </div>
+    </section>
   );
 }
