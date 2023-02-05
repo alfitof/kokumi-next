@@ -6,13 +6,14 @@ import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import Navigation from '../components/navigation';
 import Homepage from '../container/homepage';
+import SEO from '../components/seo';
 
 export default function Home() {
   return (
     <div>
+      <SEO />
       <Navigation />
       <Homepage />
-      {/* <Manage /> */}
     </div>
   );
 }

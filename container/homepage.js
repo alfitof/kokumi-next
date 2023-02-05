@@ -1,35 +1,85 @@
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 export default function Homepage() {
+  const [color, setColor] = useState('#2e2d67');
+  const click = (color) => {
+    setColor(color);
+  };
+  useEffect(() => {
+    document.body.style.backgroundColor = color;
+  }, [color]);
+
+  const [image, setImage] = useState('/image/rainbow miring.png');
+  const clickImage = (image) => {
+    setImage(image);
+  };
+  useEffect(() => {
+    document.body.style.src = image;
+  }, [image]);
   return (
     <section>
-      <div class="circle"></div>
+      <div class="circle" style={{ background: color }}></div>
 
       <div class="content">
         <div class="textBox">
           <h2>
             Its not just Bobba
             <br />
-            Its <span> KOKUMI コクミ</span>
+            Its <span style={{ color: color }}> KOKUMI コクミ</span>
           </h2>
-          <a href="#">Order Now</a>
+          <a href="#" style={{ background: color }}>
+            Order Now
+          </a>
         </div>
         <div class="imgBox">
-          <Image src="/image/rainbow miring.png" width={'350'} height={'350'} class="kokumi" />
+          <Image src={image} width={'350'} height={'350'} class="kokumi" />
         </div>
       </div>
       <ul class="thumb">
         <li>
-          <Image src="/image/rainbow mini.png" width={60} height={60} />
+          <Image
+            src="/image/rainbow mini.png"
+            width={60}
+            height={60}
+            onClick={() => {
+              click('#2e2d67');
+              clickImage('/image/rainbow miring.png');
+            }}
+          />
         </li>
         <li>
-          <Image src="/image/cheese mini.png" width={60} height={60} />
+          <Image
+            src="/image/cheese mini.png"
+            width={60}
+            height={60}
+            onClick={() => {
+              click('#baaaf6');
+              clickImage('/image/cheese miring.png');
+            }}
+          />
         </li>
         <li>
-          <Image src="/image/88rising mini.png" width={60} height={60} />
+          <Image
+            src="/image/88rising mini.png"
+            width={60}
+            height={60}
+            onClick={() => {
+              click('#a0dcea');
+              clickImage('/image/88rising miring.png');
+            }}
+          />
         </li>
         <li>
-          <Image src="/image/boba mini.png" width={60} height={60} />
+          <Image
+            src="/image/boba mini.png"
+            width={60}
+            height={60}
+            onClick={() => {
+              click('#ff7774');
+              clickImage('/image/boba miring.png');
+            }}
+          />
         </li>
       </ul>
       <ul class="sci">

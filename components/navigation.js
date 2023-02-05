@@ -63,8 +63,9 @@ export default function Navigation() {
         <div className="container mx-auto">
           {navList}
           <div className="w-full mb-4">
-            <div style={{ width: '30%', margin: 'auto' }}>
+            <div className="connected">
               <ConnectButton
+                label="Connect"
                 accountStatus={{
                   smallScreen: 'avatar',
                   largeScreen: 'full',
