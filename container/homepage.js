@@ -7,7 +7,7 @@ export default function Homepage() {
     setColor(color);
   };
   useEffect(() => {
-    document.body.style.backgroundColor = color;
+    document.querySelector('.circle').style.backgroundColor = color;
   }, [color]);
 
   const [image, setImage] = useState('/image/rainbow miring.png');
@@ -15,7 +15,7 @@ export default function Homepage() {
     setImage(image);
   };
   useEffect(() => {
-    document.body.style.src = image;
+    document.querySelector('.kokumi').style.src = image;
   }, [image]);
 
   const [color2, setColor2] = useState('#ccddef');
@@ -23,11 +23,11 @@ export default function Homepage() {
     setColor2(color2);
   };
   useEffect(() => {
-    document.body.style.backgroundColor = color2;
+    document.querySelector('.circle11').style.backgroundColor = color2;
   }, [color2]);
 
   return (
-    <section>
+    <div className="section">
       <div className="circle11" style={{ background: color2 }}></div>
       <div className="circle" style={{ background: color }}></div>
 
@@ -81,7 +81,7 @@ export default function Homepage() {
             onClick={() => {
               click('#a0dcea');
               clickImage('/image/88rising miring.png');
-              clickThumb('rgb(237 251 255)`');
+              clickThumb('rgb(237 251 255)');
             }}
           />
         </li>
@@ -115,6 +115,6 @@ export default function Homepage() {
           </a>
         </li>
       </ul>
-    </section>
+    </div>
   );
 }

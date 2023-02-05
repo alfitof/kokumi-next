@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Navbar, MobileNav, Typography, Button, IconButton } from '@material-tailwind/react';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Navigation() {
   const [openNav, setOpenNav] = useState(false);
@@ -13,24 +14,24 @@ export default function Navigation() {
   const navList = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-14">
       <span className="p-1">
-        <a href="#" className="flex items-center" style={{ color: '#303065' }}>
+        <Link href="/" className="flex items-center" style={{ color: '#303065' }}>
           Home
-        </a>
+        </Link>
       </span>
       <span className="p-1">
-        <a href="#" className="flex items-center" style={{ color: '#303065' }}>
+        <Link href="/menu" className="flex items-center" style={{ color: '#303065' }}>
           Menu
-        </a>
+        </Link>
       </span>
       <span className="p-1">
-        <a href="#" className="flex items-center" style={{ color: '#303065' }}>
+        <Link href="#" className="flex items-center" style={{ color: '#303065' }}>
           What New
-        </a>
+        </Link>
       </span>
       <span className="p-1">
-        <a href="#" className="flex items-center" style={{ color: '#303065' }}>
+        <Link href="#" className="flex items-center" style={{ color: '#303065' }}>
           Contact
-        </a>
+        </Link>
       </span>
     </ul>
   );
@@ -38,7 +39,7 @@ export default function Navigation() {
   return (
     <nav class="block w-full bg-white text-white py-2 px-10 lg:px-20 lg:py-4">
       <div className="mx-auto flex items-center justify-between text-gray-900">
-        <a href="#" className="mr-4 cursor-pointer py-1.5">
+        <a href="/" className="mr-4 cursor-pointer py-1.5">
           <Image src="/image/logo.png" alt="" width={80} height={80} style={{ position: 'relative' }} />
         </a>
         <div className="hidden lg:block" style={{ marginLeft: '5%' }}>
